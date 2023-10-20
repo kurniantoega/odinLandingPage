@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,300&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/* HEADER */
+header {
+  background-color: #1f2937;
+  color: #f9faf8;
+  padding: 1rem 13rem;
+}
+header .nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+header .nav .nav-left #logo {
+  font-size: 24px;
+  font-weight: 900;
+}
+header .nav .nav-right {
+  font-size: 18px;
+  color: #e5e7eb;
+}
+header .nav .nav-right ul {
+  display: flex;
+  list-style-type: none;
+  gap: 1.5rem;
+}
+header .nav .nav-right ul li {
+  cursor: pointer;
+}
+header .nav .nav-right ul li::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid #e5e7eb;
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+header .nav .nav-right ul li:hover:after {
+  transform: scaleX(0.5);
+}
+
+header .hero {
+  display: flex;
+  padding: 5rem 0;
+  gap: 2rem;
+}
+header .hero .hero-left {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+header .hero .hero-left h1 {
+  font-size: 48px;
+  font-weight: 900;
+}
+header .hero .hero-left p {
+  font-size: 18px;
+}
+header .hero .hero-left button {
+  background-color: #3882f6;
+  border-radius: 5px;
+  color: #f9faf8;
+  padding: 0.5rem;
+  font-weight: 700;
+  width: 120px;
+  border: none;
+  outline: none;
+}
+header .hero .hero-right {
+  width: 50%;
+}
+header .hero .hero-right-image {
+  display: flex;
+  height: 300px;
+}
+
+/* INFORMATION */
+#information {
+  padding: 5rem 13rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#information h2 {
+  font-size: 36px;
+  font-weight: 900;
+  color: #1f2937;
+}
+#information .information-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+#information .information-container .information-container-card {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 160px;
+}
+#information .information-container .information-container-card .information-container-card-image {
+  width: 160px;
+  height: 160px;
+  border: 5px solid #3882f6;
+  border-radius: 10px;
+}
+#information .information-container .information-container-card .information-container-card-image .image {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* QUOTE */
+#quote {
+  background-color: #e5e7eb;
+  display: flex;
+  flex-direction: column;
+  padding: 7rem 17rem;
+}
+#quote em {
+  font-size: 36px;
+  font-weight: 300;
+}
+#quote p {
+  font-size: 24px;
+  font-weight: 700;
+  align-self: flex-end;
+}
+
+/* SIGNUP */
+#sign-up {
+  padding: 5rem 13rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#sign-up .sign-up-container {
+  background-color: #3882f6;
+  color: #f9faf8;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding: 3rem;
+}
+#sign-up .sign-up-container .sign-up-container-left strong {
+  font-size: 24px;
+}
+#sign-up .sign-up-container .sign-up-container-right button {
+  background-color: #3882f6;
+  border-radius: 5px;
+  color: #f9faf8;
+  border: 2px solid #f9faf8;
+  font-weight: 700;
+  padding: 0.5rem 2rem;
+}
+
+footer {
+  background-color: #1f2937;
+  color: #f9faf8;
+  text-align: center;
+  padding: 2rem;
+}
